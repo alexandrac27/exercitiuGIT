@@ -5,8 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1</title>
+    <style>
+        #flex {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: space-around;
+            
+        }
+
+        #rosu {
+            background-color: red;
+            flex-grow: 0.3;
+        }
+
+        #albastru {
+            background-color: blue;
+            flex-grow: 0.3;
+        }
+
+        @media (max-width:768px) {
+             #flex {
+                 flex-direction: column;
+             }
+        }
+    </style>
 </head>
 <body>
+    <div id="flex">
+        <div id="rosu"></div>
+        <div id="albastru"></div>
+    </div>
     
 </body>
 </html>
